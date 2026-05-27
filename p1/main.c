@@ -5,14 +5,14 @@ int main(void)
     char arr[10];
     char mostCh = 0, currentCh = 0;
     int maxCnt = 0, currentCnt = 0;
-    int *p = nullptr, *q = nullptr;
     
     scanf("%10s", &arr);
     
-    for(p = arr; p < arr+10; p++){
+    for(char *p = arr; p < arr+10; p++){
+        currentCnt = 0;
         currentCh = *p; 
         
-        for(q = arr; q < arr+10; q++){
+        for(char *q = arr; q < arr+10; q++){
             if(*q == currentCh){
                 currentCnt++;
             }
