@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    char arr[10];
+    char arr[11];
     char mostCh = 0, currentCh = 0;
     int maxCnt = 0, currentCnt = 0;
     
