@@ -2,11 +2,13 @@
 
 int main(void)
 {
-    char arr[11];
-    char mostCh = 0, currentCh = 0;
+    char arr[10];
+    char mostCh = '\0', currentCh = '\0';
     int maxCnt = 0, currentCnt = 0;
-    
-    scanf("%10s", &arr);
+
+    for(char *p = arr; p < arr+10; p++){
+        scanf("%c", p);
+    }
     
     for(char *p = arr; p < arr+10; p++){
         currentCnt = 0;
